@@ -1,0 +1,632 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$mainColor : #2da8c9;
+$dGray : #bfbfbf;
+$lGray : #ebebeb;
+$headerFontFam : Goudy;
+$contentFontFam : calibri;
+$numberFontFam : Lucida Sans;
+$bRadiusSize : 5px;
+$bRadiusButtonSize : 5px;
+$h1FontSize : 65px;
+$h2FontSize : 42px;
+
+span.error{
+  color: #ff0000;
+}
+
+label.error{
+  color: #ff0000;
+}
+
+.successMessage {
+  text-align: center;
+  background: #bfbfbf;
+  padding: 20px;
+  font-size: 30px;
+}
+
+noscript div{
+  width: 100%;
+  text-align: center;
+  color: red;
+  padding: 50px;
+  font-weight: bolder;
+  border-bottom:3px solid red;
+  font-size: 30px;
+}
+
+@mixin disp-button($bgColor, $font){
+  display: inline-block;
+  padding: 15px;
+  background: $bgColor;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: $font;
+  font-size: 45px;
+  color: #ffffff ;
+  cursor: pointer;
+}
+
+@mixin button-container(){
+  margin: 3% 0 12% 5%;
+  padding: 0px;
+  width: 90%;
+}
+
+@mixin name-input(){
+  border: 1px solid white;
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+header{
+  width: 100%;
+  margin: 0;
+  background-color: $mainColor;
+  height: 250px;
+  color: #ffffff;
+  div{
+    float: left;
+    margin-top: 5%;
+    img.logo{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  div.logo-div{
+    margin-left: 10%;
+    width: 170px;
+  }
+
+  div.menu-div{
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 20px;
+    nav {
+      ul {
+        list-style-type: none;
+        li {
+          display: inline-block;
+          border-right: 2px solid #ffffff;
+          &:last-child {
+            border-right: none;
+          }
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.search-div{
+    border: 1px solid #ffffff;
+    margin-top: 70px;
+    width: 220px;
+    border-radius: 10px;
+    padding: 0%;
+
+    input{
+      height: 35px;
+      width: 180px;
+      border-style: none;
+      background-color: transparent;
+      font-size: 15pt;
+      margin-left: 7px;
+    }
+    input:focus {
+      outline-color: transparent;
+      outline-style: none;
+      color: #ffffff;
+    }
+    img{
+      float: right;
+      width: 25px;
+      padding: 7px 7px 7px 0px;
+    }
+
+  }
+
+}
+
+section{
+  text-align: center;
+  font-family: $contentFontFam;
+
+  div{
+    margin-top: 35px;
+
+    h1{
+      color: $mainColor;
+      font-size: $h1FontSize;
+      font-weight: bold;
+    }
+    h2{
+      color: $mainColor;
+      font-size: $h2FontSize;
+    }
+
+    &:last-child{
+      margin-top: 10px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+footer{
+  div {
+    clear: both;
+    background-color: $dGray;
+    font-family: $contentFontFam;
+    text-align: center;
+
+    div.circles {
+      width: 35%;
+      margin: 0 auto;
+      div {
+        display: inline-block;
+        padding: 30px;
+        border-radius: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+      }
+    }
+
+    div.links {
+      width: 70%;
+      margin: 0 auto;
+      clear: both;
+      margin-bottom: 20px;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          border-right: 2px solid #ffffff;
+          padding-left: 20px;
+          padding-right: 20px;
+          &:last-child {
+            border-right: 0;
+          }
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 25px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    div.copy-right {
+      width: 50%;
+      margin: 0 auto;
+      color: #ffffff;
+      font-size: 20px;
+    }
+  }
+}
+
+/*
+Form content
+*/
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+.form-head-font{
+  padding: 0 0 2px 2%;
+  font-family: $contentFontFam;
+  font-size: 28px;
+  color: $mainColor;
+}
+
+#right-form-head-font{
+  padding: 0 0 0 9%;
+  font-family: $contentFontFam;
+  font-size: 28px;
+  color: $mainColor;
+}
+
+.first-page-div {
+  margin: 0% 15% 0% 15%;
+  border: 2px solid $lGray;
+  align: center;
+  div {
+    @extend .float-left;
+  }
+  div.phase-div{
+    margin: 5% 5% 5% 5%;
+    width: 90%;
+    height: 96px;
+    position: relative;
+    div.round-one-div {
+      z-index: 0;
+      left: 2%;
+      font-family: $numberFontFam;
+      background: white;
+      font-size: 50px;
+      color: $mainColor;
+      border: 13px solid $dGray;
+      padding: 10px 21px 10px 21px;
+      border-radius: 80px;
+      position: absolute;
+      //display:inline-block;
+    }
+    div.round-two-div {
+      z-index: 0;
+      font-family: $numberFontFam;
+      background: white;
+      font-size: 50px;
+      color: $mainColor;
+      border: 13px solid $dGray;
+      padding: 10px 21px 10px 21px;
+      border-radius: 80px;
+      position: absolute;
+      margin: 0 44% auto;
+    }
+    div.round-three-div {
+      z-index: 0;
+      position: absolute;
+      right: 2%;
+      font-family: $numberFontFam;
+      background: white;
+      font-size: 50px;
+      color: $mainColor;
+      border: 13px solid $dGray;
+      padding: 10px 21px 10px 21px;
+      border-radius: 80px;
+    }
+    div.round-color{
+      background: $mainColor;
+      color: white;
+    }
+    div.divider-for-dash{
+      height: 15px;
+      width: 92%;
+      background: $dGray;
+      margin: 40px 4% auto;
+    }
+  }
+  .form-first-page-div {
+    clear: both;
+    width: 90%;
+    margin: 0px 5% 0% 5%;
+    background: $lGray;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    div.header-text {
+      padding: 25px;
+      font-family: "Arial";
+      font-size: 40px;
+      color: $mainColor;
+    }
+    form {
+      font-family: $contentFontFam;
+      div{
+        width: 100%;
+        a{
+          button{
+            @extend .float-left;
+            border: 0px;
+            display: inline-block;
+            padding: 15px;
+            background: $mainColor;
+            text-align: center;
+            width: 35%;
+            border-radius: 10px;
+            font-family: $contentFontFam;
+            font-size: 45px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      div.center-div {
+        //border: 1px solid ;
+        margin: 0% 7% 0% 7%;
+        width: 90%;
+        div.tab-pane{
+          width: 95%;
+          border-radius: 20px;
+          margin-bottom: 20px;
+          ul{
+            li{
+              height: 60px;
+              width: 50%;
+              margin: 0;
+              display: inline;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+              a{
+                color: #ffffff;
+                font-size: 35px;
+                font-weight: bold;
+                margin: auto;
+                text-align: center;
+                outline: 0;
+                &:hover{
+                  color: #ffffff;
+                  background-color: $mainColor;
+                  border-top-left-radius: 10px;
+                  border-top-right-radius: 10px;
+                }
+              }
+            }
+            li.not-active{
+              background-color: $mainColor;
+              color: #ffffff;
+            }
+            li.not-active.active{
+              background-color: #ffffff;
+              a{
+                background-color: #ffffff;
+                color: $mainColor;
+              }
+            }
+          }
+          div.tab-content{
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: #ffffff;
+            color: $mainColor;
+            width: 100%;
+            div.secondCenterDiv {
+              padding: 5px 50px;
+              background: white;
+              width: 100%;
+
+              div.form-head-font{
+                margin-top: 10px;
+                margin-bottom: 3px;
+              }
+
+              div.secondRowDiv {
+                width: 100%;
+                div.right{
+                  width: 35%;
+                  @extend .float-right;
+                  img.imageVisa{
+                    position: relative;
+                    top: -10px;
+                  }
+                }
+                div.fullWidth {
+                  width: 100%;
+                  input {
+                    border: 1px solid $lGray;
+                    background-color: $lGray;
+                    height: 50px;
+                    width: 96%;
+                    border-radius: 10px;
+                    font-size: 30px;
+                  }
+                }
+
+                div.halfWidth-div {
+                  //border: 1px solid black;
+                  display: inline-block;
+                  width: 48%;
+                  input {
+                    @extend .float-left;
+                    border: 1px solid $lGray;
+                    background-color: $lGray;
+                    height: 50px;
+                    width: 95%;
+                    border-radius: 10px;
+                    font-size: 30px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+
+        div.row-div {
+          //position: relative;
+          //border: 1px solid red
+          width: 100%;
+          margin: 0% 0% 2% 0%;
+          div.radio-div{
+            //border: 1px solid darkred;
+            position: relative;
+            margin: 0 50px 0 10px;
+            padding: 0 2px 0 2px;
+            input{
+              position: absolute;
+              top: 4px;
+              left: 3px;
+              width: 25px;
+              height: 25px;
+              opacity: 0;
+              &:checked + {
+                background: $mainColor;
+                label{
+                  div.radio-button{
+                    background: $mainColor;
+                    div.circle-div{
+                      background: #ffffff;
+                    }
+                    div{
+                      color: #ffffff;
+                    }
+                  }
+                }
+              }
+            }
+            div.radio-button  {
+              border: 1px solid $mainColor;
+              position: relative;
+              padding: 2px 3px 2px 15px;
+              font-family: $contentFontFam;
+              font-size: 28px;
+              color: $mainColor;
+              border: 1px solid $mainColor;
+              border-radius: 18px;
+              div{
+                margin: 2px 2px 2px 15px;
+              }
+              div.circle-div {
+                position: absolute;
+                top: 6px;
+                left: -8px;
+                background: $mainColor;
+                padding: 10px;
+                border-radius: 10px;
+              }
+            }
+          }
+          div.checkbox{
+            margin-top: 3%;
+            display: inline-block;
+            width: 90%;
+            div {
+              width: 100%;
+              display: inline-block;
+              input {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                z-index: 1;
+                opacity: 0;
+                margin: 0;
+              }
+              span {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                background: #ffffff;
+                border-radius: 10px;
+                margin: 0;
+              }
+
+              input:checked + span {
+                background: url("../../images/checkIcon.png");
+              }
+              label {
+                margin-left: 25px;
+                display: inline-block;
+                div{
+                  color: $mainColor;
+                  font-size: 25px;
+                  margin-top: 2%;
+                  margin-left: 5%;
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+
+          div.fullWidth {
+            //border: 1px solid red;
+            clear: both;
+            width: 100%;
+            input {
+              border: 1px solid white;
+              height: 50px;
+              width: 96%;
+              border-radius: 10px;
+              font-size: 30px;
+            }
+
+            textarea{
+              width: 96%;
+              height: 160px;
+              border-radius: 10px;
+              border-style: none;
+              margin-top: 1%;
+              font-size: 20px;
+            }
+
+          }
+
+          div.halfWidth-div {
+            //border: 1px solid black;
+            display: inline-block;
+            width: 48%;
+
+            div.left {
+              input {
+                @extend .float-left;
+                border: 1px solid white;
+                height: 50px;
+                width: 95%;
+                border-radius: 10px;
+                font-size: 30px;
+              }
+            }
+
+            div.right {
+
+              input {
+                @extend .float-right;
+                border: 1px solid white;
+                height: 50px;
+                width: 95%;
+                border-radius: 10px;
+                font-size: 30px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+  #first-button-div{
+    @include button-container();
+    div.button-next {
+      @extend .float-right;
+      @include disp-button($mainColor, $contentFontFam)
+    }
+  }
+  #second-button-div{
+    @include button-container();
+    div.button-back {
+      @extend .float-left;
+      @include disp-button($mainColor, $contentFontFam)
+    }
+    div.button-proceed{
+      @extend .float-right;
+      @include disp-button($mainColor, $contentFontFam)
+    }
+  }
+  #third-button-div{
+    @include button-container();
+    div.button-back {
+      @extend .float-left;
+      @include disp-button($mainColor, $contentFontFam)
+    }
+    div.button-submit {
+      @extend .float-right;
+      @include disp-button($mainColor, $contentFontFam)
+    }
+  }
+}

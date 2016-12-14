@@ -1,0 +1,742 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 19, ../sass/screen.scss */
+span.error {
+  color: #ff0000;
+}
+
+/* line 23, ../sass/screen.scss */
+label.error {
+  color: #ff0000;
+}
+
+/* line 27, ../sass/screen.scss */
+.successMessage {
+  text-align: center;
+  background: #bfbfbf;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* line 34, ../sass/screen.scss */
+noscript div {
+  width: 100%;
+  text-align: center;
+  color: red;
+  padding: 50px;
+  font-weight: bolder;
+  border-bottom: 3px solid red;
+  font-size: 30px;
+}
+
+/* line 71, ../sass/screen.scss */
+header {
+  width: 100%;
+  margin: 0;
+  background-color: #2da8c9;
+  height: 250px;
+  color: #ffffff;
+}
+/* line 77, ../sass/screen.scss */
+header div {
+  float: left;
+  margin-top: 5%;
+}
+/* line 80, ../sass/screen.scss */
+header div img.logo {
+  width: 100%;
+  height: 100%;
+}
+/* line 86, ../sass/screen.scss */
+header div.logo-div {
+  margin-left: 10%;
+  width: 170px;
+}
+/* line 91, ../sass/screen.scss */
+header div.menu-div {
+  width: 40%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 20px;
+}
+/* line 97, ../sass/screen.scss */
+header div.menu-div nav ul {
+  list-style-type: none;
+}
+/* line 99, ../sass/screen.scss */
+header div.menu-div nav ul li {
+  display: inline-block;
+  border-right: 2px solid #ffffff;
+}
+/* line 102, ../sass/screen.scss */
+header div.menu-div nav ul li:last-child {
+  border-right: none;
+}
+/* line 105, ../sass/screen.scss */
+header div.menu-div nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 111, ../sass/screen.scss */
+header div.menu-div nav ul li a:hover {
+  text-decoration: underline;
+}
+/* line 120, ../sass/screen.scss */
+header div.search-div {
+  border: 1px solid #ffffff;
+  margin-top: 70px;
+  width: 220px;
+  border-radius: 10px;
+  padding: 0%;
+}
+/* line 127, ../sass/screen.scss */
+header div.search-div input {
+  height: 35px;
+  width: 180px;
+  border-style: none;
+  background-color: transparent;
+  font-size: 15pt;
+  margin-left: 7px;
+}
+/* line 135, ../sass/screen.scss */
+header div.search-div input:focus {
+  outline-color: transparent;
+  outline-style: none;
+  color: #ffffff;
+}
+/* line 140, ../sass/screen.scss */
+header div.search-div img {
+  float: right;
+  width: 25px;
+  padding: 7px 7px 7px 0px;
+}
+
+/* line 150, ../sass/screen.scss */
+section {
+  text-align: center;
+  font-family: calibri;
+}
+/* line 154, ../sass/screen.scss */
+section div {
+  margin-top: 35px;
+}
+/* line 157, ../sass/screen.scss */
+section div h1 {
+  color: #2da8c9;
+  font-size: 65px;
+  font-weight: bold;
+}
+/* line 162, ../sass/screen.scss */
+section div h2 {
+  color: #2da8c9;
+  font-size: 42px;
+}
+/* line 167, ../sass/screen.scss */
+section div:last-child {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+/* line 175, ../sass/screen.scss */
+footer div {
+  clear: both;
+  background-color: #bfbfbf;
+  font-family: calibri;
+  text-align: center;
+}
+/* line 181, ../sass/screen.scss */
+footer div div.circles {
+  width: 35%;
+  margin: 0 auto;
+}
+/* line 184, ../sass/screen.scss */
+footer div div.circles div {
+  display: inline-block;
+  padding: 30px;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+/* line 195, ../sass/screen.scss */
+footer div div.links {
+  width: 70%;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 20px;
+}
+/* line 200, ../sass/screen.scss */
+footer div div.links ul {
+  list-style: none;
+}
+/* line 202, ../sass/screen.scss */
+footer div div.links ul li {
+  display: inline-block;
+  border-right: 2px solid #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* line 207, ../sass/screen.scss */
+footer div div.links ul li:last-child {
+  border-right: 0;
+}
+/* line 210, ../sass/screen.scss */
+footer div div.links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+/* line 214, ../sass/screen.scss */
+footer div div.links ul li a:hover {
+  text-decoration: underline;
+}
+/* line 222, ../sass/screen.scss */
+footer div div.copy-right {
+  width: 50%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/*
+Form content
+*/
+/* line 235, ../sass/screen.scss */
+.float-left, .first-page-div div, .first-page-div .form-first-page-div form div a button, .first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.halfWidth-div input, .first-page-div .form-first-page-div form div.center-div div.row-div div.halfWidth-div div.left input, .first-page-div #second-button-div div.button-back, .first-page-div #third-button-div div.button-back {
+  float: left;
+}
+
+/* line 239, ../sass/screen.scss */
+.float-right, .first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.right, .first-page-div .form-first-page-div form div.center-div div.row-div div.halfWidth-div div.right input, .first-page-div #first-button-div div.button-next, .first-page-div #second-button-div div.button-proceed, .first-page-div #third-button-div div.button-submit {
+  float: right;
+}
+
+/* line 242, ../sass/screen.scss */
+.form-head-font {
+  padding: 0 0 2px 2%;
+  font-family: calibri;
+  font-size: 28px;
+  color: #2da8c9;
+}
+
+/* line 249, ../sass/screen.scss */
+#right-form-head-font {
+  padding: 0 0 0 9%;
+  font-family: calibri;
+  font-size: 28px;
+  color: #2da8c9;
+}
+
+/* line 256, ../sass/screen.scss */
+.first-page-div {
+  margin: 0% 15% 0% 15%;
+  border: 2px solid #ebebeb;
+  align: center;
+}
+/* line 263, ../sass/screen.scss */
+.first-page-div div.phase-div {
+  margin: 5% 5% 5% 5%;
+  width: 90%;
+  height: 96px;
+  position: relative;
+}
+/* line 268, ../sass/screen.scss */
+.first-page-div div.phase-div div.round-one-div {
+  z-index: 0;
+  left: 2%;
+  font-family: Lucida Sans;
+  background: white;
+  font-size: 50px;
+  color: #2da8c9;
+  border: 13px solid #bfbfbf;
+  padding: 10px 21px 10px 21px;
+  border-radius: 80px;
+  position: absolute;
+}
+/* line 281, ../sass/screen.scss */
+.first-page-div div.phase-div div.round-two-div {
+  z-index: 0;
+  font-family: Lucida Sans;
+  background: white;
+  font-size: 50px;
+  color: #2da8c9;
+  border: 13px solid #bfbfbf;
+  padding: 10px 21px 10px 21px;
+  border-radius: 80px;
+  position: absolute;
+  margin: 0 44% auto;
+}
+/* line 293, ../sass/screen.scss */
+.first-page-div div.phase-div div.round-three-div {
+  z-index: 0;
+  position: absolute;
+  right: 2%;
+  font-family: Lucida Sans;
+  background: white;
+  font-size: 50px;
+  color: #2da8c9;
+  border: 13px solid #bfbfbf;
+  padding: 10px 21px 10px 21px;
+  border-radius: 80px;
+}
+/* line 305, ../sass/screen.scss */
+.first-page-div div.phase-div div.round-color {
+  background: #2da8c9;
+  color: white;
+}
+/* line 309, ../sass/screen.scss */
+.first-page-div div.phase-div div.divider-for-dash {
+  height: 15px;
+  width: 92%;
+  background: #bfbfbf;
+  margin: 40px 4% auto;
+}
+/* line 316, ../sass/screen.scss */
+.first-page-div .form-first-page-div {
+  clear: both;
+  width: 90%;
+  margin: 0px 5% 0% 5%;
+  background: #ebebeb;
+  border-radius: 10px;
+  padding-bottom: 2%;
+}
+/* line 323, ../sass/screen.scss */
+.first-page-div .form-first-page-div div.header-text {
+  padding: 25px;
+  font-family: "Arial";
+  font-size: 40px;
+  color: #2da8c9;
+}
+/* line 329, ../sass/screen.scss */
+.first-page-div .form-first-page-div form {
+  font-family: calibri;
+}
+/* line 331, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div {
+  width: 100%;
+}
+/* line 334, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div a button {
+  border: 0px;
+  display: inline-block;
+  padding: 15px;
+  background: #2da8c9;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: calibri;
+  font-size: 45px;
+  color: #ffffff;
+}
+/* line 350, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div {
+  margin: 0% 7% 0% 7%;
+  width: 90%;
+}
+/* line 354, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane {
+  width: 95%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+/* line 359, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane ul li {
+  height: 60px;
+  width: 50%;
+  margin: 0;
+  display: inline;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 366, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane ul li a {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  outline: 0;
+}
+/* line 373, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane ul li a:hover {
+  color: #ffffff;
+  background-color: #2da8c9;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 381, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane ul li.not-active {
+  background-color: #2da8c9;
+  color: #ffffff;
+}
+/* line 385, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane ul li.not-active.active {
+  background-color: #ffffff;
+}
+/* line 387, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane ul li.not-active.active a {
+  background-color: #ffffff;
+  color: #2da8c9;
+}
+/* line 393, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ffffff;
+  color: #2da8c9;
+  width: 100%;
+}
+/* line 399, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv {
+  padding: 5px 50px;
+  background: white;
+  width: 100%;
+}
+/* line 404, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.form-head-font {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+/* line 409, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv {
+  width: 100%;
+}
+/* line 411, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.right {
+  width: 35%;
+}
+/* line 414, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.right img.imageVisa {
+  position: relative;
+  top: -10px;
+}
+/* line 419, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.fullWidth {
+  width: 100%;
+}
+/* line 421, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.fullWidth input {
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  height: 50px;
+  width: 96%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+/* line 431, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.halfWidth-div {
+  display: inline-block;
+  width: 48%;
+}
+/* line 435, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.tab-pane div.tab-content div.secondCenterDiv div.secondRowDiv div.halfWidth-div input {
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+/* line 451, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div {
+  width: 100%;
+  margin: 0% 0% 2% 0%;
+}
+/* line 456, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div {
+  position: relative;
+  margin: 0 50px 0 10px;
+  padding: 0 2px 0 2px;
+}
+/* line 461, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div input {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+}
+/* line 468, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div input:checked + {
+  background: #2da8c9;
+}
+/* line 471, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div input:checked + label div.radio-button {
+  background: #2da8c9;
+}
+/* line 473, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div input:checked + label div.radio-button div.circle-div {
+  background: #ffffff;
+}
+/* line 476, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div input:checked + label div.radio-button div {
+  color: #ffffff;
+}
+/* line 483, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div div.radio-button {
+  border: 1px solid #2da8c9;
+  position: relative;
+  padding: 2px 3px 2px 15px;
+  font-family: calibri;
+  font-size: 28px;
+  color: #2da8c9;
+  border: 1px solid #2da8c9;
+  border-radius: 18px;
+}
+/* line 492, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div div.radio-button div {
+  margin: 2px 2px 2px 15px;
+}
+/* line 495, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.radio-div div.radio-button div.circle-div {
+  position: absolute;
+  top: 6px;
+  left: -8px;
+  background: #2da8c9;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 505, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox {
+  margin-top: 3%;
+  display: inline-block;
+  width: 90%;
+}
+/* line 509, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox div {
+  width: 100%;
+  display: inline-block;
+}
+/* line 512, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox div input {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+}
+/* line 520, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox div span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 0;
+}
+/* line 529, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox div input:checked + span {
+  background: url("../../images/checkIcon.png");
+}
+/* line 532, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox div label {
+  margin-left: 25px;
+  display: inline-block;
+}
+/* line 535, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.checkbox div label div {
+  color: #2da8c9;
+  font-size: 25px;
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 100%;
+}
+/* line 547, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.fullWidth {
+  clear: both;
+  width: 100%;
+}
+/* line 551, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.fullWidth input {
+  border: 1px solid white;
+  height: 50px;
+  width: 96%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+/* line 559, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.fullWidth textarea {
+  width: 96%;
+  height: 160px;
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 1%;
+  font-size: 20px;
+}
+/* line 570, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.halfWidth-div {
+  display: inline-block;
+  width: 48%;
+}
+/* line 576, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.halfWidth-div div.left input {
+  border: 1px solid white;
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+/* line 588, ../sass/screen.scss */
+.first-page-div .form-first-page-div form div.center-div div.row-div div.halfWidth-div div.right input {
+  border: 1px solid white;
+  height: 50px;
+  width: 95%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+/* line 603, ../sass/screen.scss */
+.first-page-div #first-button-div {
+  margin: 3% 0 12% 5%;
+  padding: 0px;
+  width: 90%;
+}
+/* line 605, ../sass/screen.scss */
+.first-page-div #first-button-div div.button-next {
+  display: inline-block;
+  padding: 15px;
+  background: #2da8c9;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: calibri;
+  font-size: 45px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 610, ../sass/screen.scss */
+.first-page-div #second-button-div {
+  margin: 3% 0 12% 5%;
+  padding: 0px;
+  width: 90%;
+}
+/* line 612, ../sass/screen.scss */
+.first-page-div #second-button-div div.button-back {
+  display: inline-block;
+  padding: 15px;
+  background: #2da8c9;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: calibri;
+  font-size: 45px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 616, ../sass/screen.scss */
+.first-page-div #second-button-div div.button-proceed {
+  display: inline-block;
+  padding: 15px;
+  background: #2da8c9;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: calibri;
+  font-size: 45px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 621, ../sass/screen.scss */
+.first-page-div #third-button-div {
+  margin: 3% 0 12% 5%;
+  padding: 0px;
+  width: 90%;
+}
+/* line 623, ../sass/screen.scss */
+.first-page-div #third-button-div div.button-back {
+  display: inline-block;
+  padding: 15px;
+  background: #2da8c9;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: calibri;
+  font-size: 45px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 627, ../sass/screen.scss */
+.first-page-div #third-button-div div.button-submit {
+  display: inline-block;
+  padding: 15px;
+  background: #2da8c9;
+  text-align: center;
+  width: 35%;
+  border-radius: 10px;
+  font-family: calibri;
+  font-size: 45px;
+  color: #ffffff;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="search"/><button id="search-btn">search</button>
+<table id="tbl-lists" border="1" width="90%">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Mobile Number</th>
+    </tr>
+    <tr  th:each="user : ${lists}">
+        <td th:text="${user.fname}"></td>
+        <td th:text="${user.lname}"></td>
+        <td th:text="${user.email}"></td>
+        <td th:text="${user.mobileNumber}"></td>
+    </tr>
+</table>
+
+<script src="resources/js/jquery-3.1.1.js"></script>
+<script>
+    $('#search-btn').click(function () {
+        var idValue = $('#search').val();
+        $.ajax({
+            type : "GET",
+            url : "/displaylist"+idValue,
+            data : {
+                "id" : idValue
+            },
+            success: function(data){
+                console.log(data);
+                console.log(data.email);
+//                createTd(data);
+            }
+        });
+    });
+
+    function createTd(users) {
+
+        $("#tbl-lists tr").detach();
+        $("#tbl-lists tr").append('<tr>' +
+                '<td></td>' +
+                '<td></td>' +
+                '<td></td>' +
+                '<td></td></tr>');
+    }
+</script>
+</body>
+</html>

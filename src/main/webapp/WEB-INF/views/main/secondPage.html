@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/screen.css"/>
+    <title>VIVAMUS</title>
+    <style>
+        #exTab1 .tab-content {
+            color : white;
+            background-color: #428bca;
+            padding : 5px 15px;
+        }
+
+        /* remove border radius for the tab */
+
+        #exTab1 .nav-pills > li > a {
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-div">
+        <img src="images/NXTLVL_WEBDEV_VIVA_LOGO.png" class="logo">
+    </div>
+    <div class="menu-div">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Bibendum</a>
+                </li>
+                <li>
+                    <a href="#">Sollicitudin</a>
+                </li>
+                <li>
+                    <a href="#">Metus</a>
+                </li>
+                <li>
+                    <a href="#">Egestas</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-div">
+        <input src="image/search.png">
+        <img src="images/NXTLVL_WEBDEV_ICON_MAGNIFYING.png"/>
+    </div>
+</header>
+
+<!-- section-->
+<section>
+    <div>
+        <h1>In euismod sapien eu maximus tempus</h1>
+    </div>
+    <div>
+        <h2>Vestibulum bibendum posuere dui, in pharetra est hendrerit ac.</h2>
+        <h2>Integer posuere metus lacus</h2>
+    </div>
+</section>
+
+<!--FORM CONTENT-->
+<div class="first-page-div">
+    <!--each div must display: inline-block;-->
+    <div class="phase-div">
+        <div class="phase-div">
+            <div class="round-div" id="circle-first">1</div>
+            <div class="round-div round-color" id="circle-center">2</div>
+            <div class="round-div" id="circle-third">3</div>
+            <div class="dash-div"></div>
+        </div>
+    </div>
+
+
+    <div class="form-first-page-div">
+        <form>
+            <div class="header-text">Your Donation</div>
+            <div class="center-div">
+
+                <div class="container"><h1>Bootstrap  tab panel example (using nav-pills)  </h1></div>
+                <div id="exTab1" class="container">
+                    <ul  class="nav nav-pills">
+                        <li class="active">
+                            <a  href="#1a" data-toggle="tab">Overview</a>
+                        </li>
+                        <li><a href="#2a" data-toggle="tab">Using nav-pills</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content clearfix">
+                        <div class="tab-pane active" id="1a">
+                            <h3>Content's background color is the same for the tab</h3>
+                        </div>
+                        <div class="tab-pane" id="2a">
+                            <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </form>
+
+
+        <!--float right-->
+
+
+    </div>
+
+    <div class="button-div">
+        <a href="index.html">
+            <div class="button-back">Back</div>
+        </a>
+        <a href="thirdPage.html">
+            <div class="button-next">Next</div>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    <div>
+    <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="links">
+        <ul>
+            <li>
+                <a href="#">Pellentesque</a>
+            </li>
+            <li>
+                <a href="#">Et interdum</a>
+            </li>
+            <li>
+                <a href="#">Neque</a>
+            </li>
+            <li>
+                <a href="#">Integer</a>
+            </li>
+            <li>
+                <a href="#">Ullamcorper</a>
+            </li>
+            <li>
+                <a href="#">Sagittis</a>
+            </li>
+        </ul>
+    </div>
+    <div class="copy-right">
+        Copyright &#169; 2015 Proin eget ipsum libero <br>
+        All Rights Reserved.
+    </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

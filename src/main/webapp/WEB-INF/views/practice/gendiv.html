@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            width: 80%;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 1px solid #7e807a;
+        }
+
+        .red{
+            background: #ff3835;
+        }
+
+        .green{
+            background: #458040;
+        }
+
+        .blue{
+            background: #3e3eff;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div th:class="${param.color1}"></div>
+    <div th:class="${param.color2}"></div>
+    <div th:class="${param.color3}"></div>
+</body>
+</html>
